@@ -37,13 +37,13 @@ tools/mkimage.sh android15-6.6  6.6
 ### 2. 编 bench 模块
 
 ```bash
-tools/buildbench.sh android13-5.15/android14-6.1  6.1/android15-6.6  6.6
+tools/buildbench.sh android13-5.15/android14-6.1/android15-6.6
 ```
 
 ### 3. 做 initramfs
 
 ```bash
-tools/mkinitramfs.sh 5.15/6.1/6/6 "target=__arm64_sys_newuname offset=4 skip=1"
+tools/mkinitramfs.sh 5.15/6.1/6.6 "target=__arm64_sys_newuname offset=4 skip=1"
 ```
 
 第二个参数会写进 `bench.conf`，由 guest 里的 init 读出来传给模块。
