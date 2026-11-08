@@ -1,0 +1,18 @@
+# build products
+*.ko
+*.o
+*.mod
+*.mod.c
+*.cmd
+*.symvers
+*.order
+.*.cmd
+.lto.o
+build/
+rootfs/
+logs/
+
+# kernel images are produced locally with tools/mkimage.sh and are not
+# redistributed: the vendor Image belongs to Samsung, the GKI ones come from
+# the DDK container.
+image/
