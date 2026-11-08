@@ -1,7 +1,6 @@
 # qemu-knox
 
-在 QEMU 里启动三星内核镜像的离线实验台，用来观察 KNOX 保护层（RKP / KDP / DEFEX）在没有真机、
-没有 EL3 的环境下会怎样表现。
+在 QEMU 里启动三星内核镜像的离线实验台，用来观察 KNOX 保护层（RKP / KDP / DEFEX）。
 
 ## 用途
 
